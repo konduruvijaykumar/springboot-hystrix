@@ -18,8 +18,7 @@ public class ApplicationConstants {
 	public static final String URL_SERVICE2_ERRORTHRESHOLDPERCENTAGE = API_HOST_URL + "s2-hystrix-errorthresholdpercentage/{timeOutMilliSec}";
 	public static final String URL_SERVICE2_REQUESTVOLUMETHRESHOLD = API_HOST_URL + "s2-hystrix-requestvolumethreshold/{timeOutMilliSec}";
 	public static final String URL_SERVICE2_HYSTRIXCOMMAND_PROP = API_HOST_URL + "s2-hystrix-command-prop/{timeOutMilliSec}";
-	// Below two constants are not used
 	public static final String HYSTRIX_EXECUTION_TIMEOUT_IN_MILLISECONDS = "execution.isolation.thread.timeoutInMilliseconds";
-	public static final String HYSTRIX_TIMEOUT_VALUE = "6000";
+	public static final String HYSTRIX_TIMEOUT_VALUE = "8000";
 	
 }
