@@ -45,7 +45,7 @@ public class SpringbootHystrixService2Controller {
 	@GetMapping("s2-hystrix-always-failure")
 	public ResponseEntity<Result> s2HystrixAlwaysFailure() throws InterruptedException {
 		Result result = new Result();
-		Thread.sleep(18000); // more value than defined in service1 for timeout
+		Thread.sleep(20000); // more value than defined in service1 for timeout
 		result.setMessage("Response from s2HystrixAlwaysSuccess() method");
 		return new ResponseEntity<>(result, HttpStatus.OK);
 	}
@@ -54,7 +54,7 @@ public class SpringbootHystrixService2Controller {
 	public ResponseEntity<Result> s2HystrixRandomSuccessFailure() throws InterruptedException {
 		Result result = new Result();
 		if(random.nextBoolean()) {
-			Thread.sleep(18000); // more value than defined in service1 for timeout
+			Thread.sleep(20000); // more value than defined in service1 for timeout
 			result.setMessage("Response from s2HystrixRandomSuccessFailure() method failed");
 		}else {
 			result.setMessage("Response from s2HystrixRandomSuccessFailure() method successful");
